@@ -1,0 +1,41 @@
+.social {
+  display: flex;
+  justify-content: center;
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__icon {
+    fill: currentColor;
+
+    transition: fill $durationTime $timingFunction;
+  }
+}
+
+.social__link {
+  @extend %centeredFlex;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+
+  transition: background-color $durationTime $timingFunction;
+
+  color: $iconFill;
+
+  &:hover,
+  &:focus {
+    color: $contrastTxtColor;
+    background-color: $accentColor;
+  }
+}
+
+.social__link--color-footer {
+  color: $contrastTxtColor;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  &:hover,
+  &:focus {
+    background-color: $accentColor;
+  }
+}

@@ -1,0 +1,41 @@
+.header {
+  border-bottom: 1px solid #ececec;
+
+  &__box {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header-contacts {
+  display: flex;
+  margin-left: auto;
+
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  &__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+}
+
+.header-contacts__link {
+  display: flex;
+  align-items: center;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $secondaryTxtColor;
+  text-decoration: none;
+
+  transition: color $durationTime $timingFunction;
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+}
