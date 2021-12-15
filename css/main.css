@@ -549,16 +549,27 @@ img {
 
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
 }
 
 .clients__item {
-  width: 170px;
+  width: calc(100% / 2 - 30px);
   height: 92px;
+  margin: 15px;
   text-align: center;
 }
 
-.clients__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .clients__item {
+    width: calc(100% / 3 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    width: 170px;
+  }
 }
 
 .clients__link {
