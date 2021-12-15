@@ -465,6 +465,12 @@ img {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 1199px) {
+  .services {
+    display: none;
+  }
+}
+
 .services__item {
   position: relative;
 }
