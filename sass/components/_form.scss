@@ -80,8 +80,9 @@
 .policy {
   display: flex;
   align-items: center;
-  @extend %text;
-
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
   color: $secondaryTxtColor;
 
   &__link {
@@ -98,6 +99,11 @@
 
     transition: background-color $durationTime $timingFunction,
       border-color $durationTime $timingFunction;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.7;
   }
 }
 
