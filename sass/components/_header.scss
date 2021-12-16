@@ -40,6 +40,9 @@
 //   }
 // }
 
+.header {
+  border-bottom: 1px solid #ececec;
+
 .menu {
   display: flex;
   justify-content: space-between;
@@ -56,14 +59,17 @@
   background-color: transparent;
 }
 
-.menu__icon--cross {
-  display: none;
+.header__box {
+  position: relative;
 }
 
-.menu__button.is-open .menu__icon--menu {
-  display: none;
-}
-
-.menu__button.is-open .menu__icon--cross {
-  display: block;
+.menu__container {
+  @media screen and (max-width: 767px) {
+    // display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $bgColor;
+  }
 }
