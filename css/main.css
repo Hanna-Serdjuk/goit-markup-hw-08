@@ -102,6 +102,10 @@ img {
   padding-bottom: 16px;
 }
 
+.menu__icon {
+  fill: currentColor;
+}
+
 .menu__button {
   display: inline-flex;
   margin: 0;
@@ -121,10 +125,6 @@ img {
   }
 }
 
-.menu__icon {
-  fill: currentColor;
-}
-
 .menu-container {
   display: none;
   position: absolute;
@@ -140,13 +140,9 @@ img {
 }
 
 .menu-container.is-open {
-  display: block;
-}
-
-@media screen and (min-width: 768px) {
-  .menu-container {
-    display: none;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .menu-container__close-button {
@@ -167,13 +163,6 @@ img {
 
 .menu-container__close-icon {
   fill: currentColor;
-}
-
-.navigation-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
 }
 
 .nav__item:not(:last-child) {
