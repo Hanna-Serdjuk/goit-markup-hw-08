@@ -780,7 +780,7 @@ img {
   position: relative;
   max-width: 450px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 40px 18px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -938,7 +938,7 @@ img {
 
 .policy__icon {
   display: inline-block;
-  margin-right: 7px;
+  margin-right: 9px;
   border: 2px solid black;
   border-radius: 2px;
   width: 16px;
