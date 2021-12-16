@@ -779,7 +779,7 @@ img {
 
 .modal {
   position: relative;
-  width: 450px;
+  max-width: 450px;
   margin: 0 auto;
   padding: 40px;
   background-color: #ffffff;
@@ -921,7 +921,7 @@ img {
 .policy {
   display: flex;
   align-items: center;
-  font-size: 12px;
+  font-size: 9px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: #757575;
@@ -939,6 +939,12 @@ img {
   width: 16px;
   height: 15px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 480px) {
+  .policy {
+    font-size: 12px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
