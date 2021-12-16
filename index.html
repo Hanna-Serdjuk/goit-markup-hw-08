@@ -24,7 +24,7 @@
 
   <body>
     <!--Шапка сайта-->
-    <header class="header">
+    <!-- <header class="header">
       <div class="container header__box">
         <a class="logo" href="./index.html">Web<span class="logo__part">Studio</span></a>
         <nav class="nav">
@@ -54,6 +54,26 @@
             >
           </li>
         </ul>
+      </div>
+    </header> -->
+
+    <header class="header">
+      <div class="container">
+        <nav class="menu">
+          <a class="logo" href="./index.html">Web<span class="logo__part">Studio</span></a>
+          <button
+            class="menu__button js-open-menu"
+            type="button"
+            data-menu-button
+            aria-expanded="false"
+            aria-controls="menu__container"
+          >
+            <svg class="menu__icon" width="40" height="40">
+              <use class="menu__icon--cross" href="./images/icons.svg#icon-cross"></use>
+              <use class="menu__icon--menu" href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </nav>
       </div>
     </header>
 
@@ -519,5 +539,12 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script defer src="js/mobile-menu.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
