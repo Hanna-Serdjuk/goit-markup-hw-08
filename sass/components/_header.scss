@@ -55,6 +55,11 @@
   &__icon {
     fill: currentColor;
   }
+
+  @media screen and (min-width: 768px) {
+    justify-content: start;
+    padding: 0;
+  }
 }
 
 .menu__button {
@@ -77,27 +82,31 @@
 }
 
 .menu-container {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  padding-top: 48px;
-  padding-bottom: 48px;
-  padding-right: 40px;
-  padding-left: 40px;
-  background-color: $bgColor;
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-right: 40px;
+    padding-left: 40px;
+    background-color: $bgColor;
 
-  &.is-open {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    &.is-open {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
   }
 
-  // @media screen and (min-width: 768px) {
-  //   display: none;
-  // }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
 }
 
 .menu-container__close-button {
@@ -116,10 +125,21 @@
   &:focus {
     color: $accentColor;
   }
+
+  &__close-icon {
+    fill: currentColor;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
-.menu-container__close-icon {
-  fill: currentColor;
+.nav {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: 88px;
+  }
 }
 
 .nav__item:not(:last-child) {
@@ -127,6 +147,11 @@
 
   @media screen and (min-width: 480px) {
     margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    margin-right: 50px;
   }
 }
 
@@ -144,19 +169,58 @@
   @media screen and (min-width: 480px) {
     font-size: 40px;
   }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.14;
+
+    transition: color $durationTime $timingFunction;
+
+    &:hover,
+    &:focus {
+      color: $accentColor;
+    }
+  }
 }
 
 .nav__link--current {
   color: $accentColor;
+
+  @media screen and (min-width: 768px) {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      width: 100%;
+      height: 4px;
+      background-color: $accentColor;
+      border-radius: 2px;
+    }
+  }
 }
 
 .header-contacts {
   display: flex;
   flex-direction: column-reverse;
 
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+    margin-left: auto;
+  }
+
   &__icon {
     @media screen and (max-width: 767px) {
       display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+      margin-right: 10px;
+      fill: currentColor;
     }
   }
 
@@ -166,6 +230,16 @@
     @media screen and (min-width: 480px) {
       margin-bottom: 32px;
     }
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.contacts-box {
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
   }
 }
 
@@ -192,6 +266,21 @@
       font-size: 34px;
     }
   }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1.14;
+    color: $secondaryTxtColor;
+
+    transition: color $durationTime $timingFunction;
+
+    &:hover,
+    &:focus {
+      color: $accentColor;
+    }
+  }
 }
 
 .menu-social {
@@ -202,6 +291,10 @@
 
   @media screen and (min-width: 480px) {
     margin-top: 32px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }
 
