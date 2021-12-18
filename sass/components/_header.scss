@@ -1,45 +1,3 @@
-// .header {
-//   border-bottom: 1px solid #ececec;
-
-//   // &__box {
-//   //   display: flex;
-//   //   align-items: center;
-//   // }
-// }
-
-// .header-contacts {
-//   display: flex;
-//   margin-left: auto;
-
-//   &__item:not(:last-child) {
-//     margin-right: 50px;
-//   }
-
-//   &__icon {
-//     margin-right: 10px;
-//     fill: currentColor;
-//   }
-// }
-
-// .header-contacts__link {
-//   display: flex;
-//   align-items: center;
-
-//   font-weight: 500;
-//   font-size: 14px;
-//   line-height: 1.14;
-//   letter-spacing: 0.02em;
-//   color: $secondaryTxtColor;
-//   text-decoration: none;
-
-//   transition: color $durationTime $timingFunction;
-
-//   &:hover,
-//   &:focus {
-//     color: $accentColor;
-//   }
-// }
-
 .header {
   border-bottom: 1px solid #ececec;
   position: relative;
@@ -135,75 +93,6 @@
   }
 }
 
-.nav {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    margin-left: 88px;
-  }
-}
-
-.nav__item:not(:last-child) {
-  margin-bottom: 20px;
-
-  @media screen and (min-width: 480px) {
-    margin-bottom: 32px;
-  }
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 0;
-    margin-right: 50px;
-  }
-}
-
-.nav__link {
-  display: inline-block;
-
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-  color: $mainTxtColor;
-
-  text-decoration: none;
-
-  @media screen and (min-width: 480px) {
-    font-size: 40px;
-  }
-
-  @media screen and (min-width: 768px) {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    font-size: 14px;
-    line-height: 1.14;
-
-    transition: color $durationTime $timingFunction;
-
-    &:hover,
-    &:focus {
-      color: $accentColor;
-    }
-  }
-}
-
-.nav__link--current {
-  color: $accentColor;
-
-  @media screen and (min-width: 768px) {
-    position: relative;
-
-    &::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: -1px;
-      width: 100%;
-      height: 4px;
-      background-color: $accentColor;
-      border-radius: 2px;
-    }
-  }
-}
-
 .header-contacts {
   display: flex;
   flex-direction: column-reverse;
@@ -211,6 +100,12 @@
   @media screen and (min-width: 768px) {
     flex-direction: column;
     margin-left: auto;
+    margin-bottom: -10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    margin-right: -30px;
   }
 
   &__icon {
@@ -233,6 +128,11 @@
 
     @media screen and (min-width: 768px) {
       margin-bottom: 10px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+      margin-right: 30px;
     }
   }
 }
