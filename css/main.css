@@ -461,6 +461,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer__box {
     justify-content: start;
+    align-items: baseline;
   }
 }
 
