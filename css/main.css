@@ -195,7 +195,6 @@ img {
 @media screen and (min-width: 768px) {
   .header-contacts {
     flex-direction: column;
-    margin-left: auto;
     margin-bottom: -10px;
   }
 }
@@ -366,6 +365,12 @@ img {
   .nav {
     display: flex;
     margin-left: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav {
+    margin-left: 93px;
   }
 }
 
@@ -614,7 +619,7 @@ img {
   color: #ffffff;
   text-align: center;
   background-color: #c4c4c4;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-image.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-2x.jpg);
 }
 
 @media screen and (min-width: 1200px) {

@@ -24,39 +24,6 @@
 
   <body>
     <!--Шапка сайта-->
-    <!-- <header class="header">
-      <div class="container header__box">
-        <a class="logo" href="./index.html">Web<span class="logo__part">Studio</span></a>
-        <nav class="nav">
-          <ul class="nav__list list">
-            <li class="nav__item">
-              <a href="./index.html" class="nav__link nav__link--current">Студия</a>
-            </li>
-            <li class="nav__item"><a href="./portfolio.html" class="nav__link">Портфолио</a></li>
-            <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
-          </ul>
-        </nav>
-        <ul class="header-contacts list">
-          <li class="header-contacts__item">
-            <a href="mailto:info@devstudio.com" class="header-contacts__link link">
-              <svg class="header-contacts__icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="header-contacts__item">
-            <a href="tel:+380961111111" class="header-contacts__link link">
-              <svg class="header-contacts__icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </div>
-    </header> -->
-
     <header class="header">
       <div class="container header__box">
         <nav class="menu">
@@ -222,12 +189,30 @@
           <h2 class="section-title team__title">Наша команда</h2>
           <ul class="team__list list">
             <li class="team-member team__item">
-              <img
-                src="./images/teammember1.jpg"
-                alt="Мужчина в очках с бородой"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/teammembers/teammember1.jpg    1x,
+                    ./images/teammembers/teammember1-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/teammembers/teammember1-tablet.jpg    1x,
+                    ./images/teammembers/teammember1-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/teammembers/teammember1-mob.jpg    1x,
+                    ./images/teammembers/teammember1-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+              </picture>
+              <img src="./images/teammembers/teammember1.jpg" alt="Мужчина в очках с бородой" />
               <div class="content-box">
                 <h3 class="team-member__name">Игорь Демьяненко</h3>
                 <p class="team-member__position">Product Designer</p>
@@ -264,12 +249,30 @@
               </div>
             </li>
             <li class="team-member team__item">
-              <img
-                src="./images/teammember2.jpg"
-                alt="Девушка блондинка в очках"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/teammembers/teammember2.jpg    1x,
+                    ./images/teammembers/teammember2-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/teammembers/teammember2-tablet.jpg    1x,
+                    ./images/teammembers/teammember2-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/teammembers/teammember2-mob.jpg    1x,
+                    ./images/teammembers/teammember2-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+              </picture>
+              <img src="./images/teammembers/teammember2.jpg" alt="Девушка блондинка в очках" />
               <div class="content-box">
                 <h3 class="team-member__name">Ольга Репина</h3>
                 <p class="team-member__position">Frontend Developer</p>
@@ -306,12 +309,30 @@
               </div>
             </li>
             <li class="team-member team__item">
-              <img
-                src="./images/teammember3.jpg"
-                alt="Мужчина с широкой улыбкой"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/teammembers/teammember3.jpg    1x,
+                    ./images/teammembers/teammember3-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/teammembers/teammember3-tablet.jpg    1x,
+                    ./images/teammembers/teammember3-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/teammembers/teammember3-mob.jpg    1x,
+                    ./images/teammembers/teammember3-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+              </picture>
+              <img src="./images/teammembers/teammember3.jpg" alt="Мужчина с широкой улыбкой" />
               <div class="content-box">
                 <h3 class="team-member__name">Николай Тарасов</h3>
                 <p class="team-member__position">Marketing</p>
@@ -348,12 +369,30 @@
               </div>
             </li>
             <li class="team-member team__item">
-              <img
-                src="./images/teammember4.jpg"
-                alt="Мужчина с бородой в очках"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/teammembers/teammember4.jpg    1x,
+                    ./images/teammembers/teammember4-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/teammembers/teammember4-tablet.jpg    1x,
+                    ./images/teammembers/teammember4-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/teammembers/teammember4-mob.jpg    1x,
+                    ./images/teammembers/teammember4-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+              </picture>
+              <img src="./images/teammembers/teammember4.jpg" alt="Мужчина с бородой в очках" />
               <div class="content-box">
                 <h3 class="team-member__name">Михаил Ермаков</h3>
                 <p class="team-member__position">UI Designer</p>
