@@ -7,13 +7,13 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $--tablet) {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $--desktop) {
       justify-content: start;
     }
   }
@@ -24,17 +24,17 @@
       text-align: center;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $--tablet) {
       margin-right: 165px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $--desktop) {
       margin-right: 70px;
     }
   }
 
   &__social {
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $--desktop) {
       margin-right: 93px;
     }
   }
@@ -133,7 +133,7 @@
       margin-bottom: 20px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $--desktop) {
       width: 358px;
       margin-right: 12px;
     }

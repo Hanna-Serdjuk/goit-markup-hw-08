@@ -1323,7 +1323,7 @@ pic {
 
 .policy__checkbox:checked + .policy__icon {
   background-color: #2196f3;
-  border-color: v #2196f3;
+  border-color: #2196f3;
   background-image: url(../images/iconcheck.svg);
   background-origin: border-box;
 }

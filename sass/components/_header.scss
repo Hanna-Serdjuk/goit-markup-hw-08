@@ -14,7 +14,7 @@
     fill: currentColor;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $--tablet) {
     justify-content: start;
     padding: 0;
   }
@@ -34,7 +34,7 @@
     color: $accentColor;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $--tablet) {
     display: none;
   }
 }
@@ -61,7 +61,7 @@
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $--tablet) {
     display: flex;
     align-items: center;
     width: 100%;
@@ -89,7 +89,7 @@
     fill: currentColor;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $--tablet) {
     display: none;
   }
 }
@@ -98,12 +98,12 @@
   display: flex;
   flex-direction: column-reverse;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $--tablet) {
     flex-direction: column;
     margin-bottom: -10px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $--desktop) {
     flex-direction: row;
     margin-right: -30px;
   }
@@ -113,7 +113,7 @@
       display: none;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $--tablet) {
       margin-right: 10px;
       fill: currentColor;
     }
@@ -122,15 +122,15 @@
   &__item {
     margin-bottom: 20px;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: $--mobile) {
       margin-bottom: 32px;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $--tablet) {
       margin-bottom: 10px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $--desktop) {
       margin-bottom: 0;
       margin-right: 30px;
     }
@@ -138,7 +138,7 @@
 }
 
 .contacts-box {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $--tablet) {
     margin-left: auto;
   }
 }
@@ -153,7 +153,7 @@
     font-size: 16px;
     color: $secondaryTxtColor;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: $--mobile) {
       font-size: 24px;
     }
   }
@@ -162,12 +162,12 @@
     font-size: 20px;
     color: $accentColor;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: $--mobile) {
       font-size: 34px;
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $--tablet) {
     display: flex;
     align-items: center;
     font-size: 14px;
@@ -189,11 +189,11 @@
   margin-top: 20px;
   margin-bottom: 0;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: $--mobile) {
     margin-top: 32px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $--tablet) {
     display: none;
   }
 }
@@ -207,7 +207,7 @@
   color: $accentColor;
   text-decoration: none;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: $--mobile) {
     font-size: 18px;
   }
 }
@@ -218,7 +218,7 @@
   margin-right: 7px;
   margin-left: 7px;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: $--mobile) {
     margin-right: 10px;
     margin-left: 10px;
   }
