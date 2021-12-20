@@ -133,9 +133,9 @@
   left: 0;
   width: 100%;
   height: 100%;
-  padding-top: 77px;
+  padding-top: 24px;
   padding-right: 24px;
-  padding-bottom: 77px;
+  padding-bottom: 24px;
   padding-left: 24px;
 
   transform: translateY(0);
@@ -144,9 +144,15 @@
   color: $contrastTxtColor;
   background-color: rgba(33, 150, 243, 0.9);
 
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.56;
   letter-spacing: 0.03em;
+
+  @media screen and (min-width: $--mobile) {
+    padding-top: 77px;
+    padding-bottom: 77px;
+    font-size: 18px;
+  }
 
   @media screen and (min-width: $--tablet) {
     padding-top: 44px;
