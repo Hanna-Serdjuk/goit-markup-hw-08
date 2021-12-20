@@ -327,7 +327,11 @@ img {
   }
 }
 
-.menu-social__link:not(:last-child)::after {
+.menu-social__item {
+  display: flex;
+}
+
+.menu-social__item:not(:last-child)::after {
   content: '|';
   color: rgba(33, 33, 33, 0.2);
   margin-right: 7px;
@@ -335,7 +339,7 @@ img {
 }
 
 @media screen and (min-width: 480px) {
-  .menu-social__link:not(:last-child)::after {
+  .menu-social__item:not(:last-child)::after {
     margin-right: 10px;
     margin-left: 10px;
   }

@@ -34,7 +34,8 @@
             aria-label="Открытие мобильного меню"
             data-menu-button
             aria-expanded="false"
-            aria-controls="menu__container"
+            aria-controls="menu-container"
+            id="menu-container"
           >
             <svg class="menu__icon" width="40" height="40">
               <use href="./images/icons.svg#icon-menu"></use>
@@ -80,11 +81,19 @@
                   >
                 </li>
               </ul>
-              <ul class="menu-social">
-                <a href="" class="menu-social__link">Instagram</a>
-                <a href="" class="menu-social__link">Twitter</a>
-                <a href="" class="menu-social__link">Facebook</a>
-                <a href="" class="menu-social__link">LinkedIn</a>
+              <ul class="menu-social list">
+                <li class="menu-social__item">
+                  <a href="" class="menu-social__link">Instagram</a>
+                </li>
+                <li class="menu-social__item">
+                  <a href="" class="menu-social__link">Twitter</a>
+                </li>
+                <li class="menu-social__item">
+                  <a href="" class="menu-social__link">Facebook</a>
+                </li>
+                <li class="menu-social__item">
+                  <a href="" class="menu-social__link">LinkedIn</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -159,25 +168,36 @@
           <h2 class="section-title services__title">Чем мы занимаемся</h2>
           <ul class="services__list list">
             <li class="services__item">
-              <img src="./images/box1.jpg" alt="Руки на клавиатуре" width="370" height="294" />
+              <picture>
+                <source
+                  srcset="./images/box/box1.jpg 1x, ./images/box/box1-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img src="./images/box/box1.jpg" alt="Руки на клавиатуре" />
+              </picture>
               <p class="services__name">Десктопные приложения</p>
             </li>
             <li class="services__item">
-              <img
-                src="./images/box2.jpg"
-                alt="В одной руке телефон вторая рука на клавиатуре"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./images/box/box2.jpg 1x, ./images/box/box2-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/box/box2.jpg"
+                  alt="В одной руке телефон вторая рука на клавиатуре"
+                />
+              </picture>
               <p class="services__name">Мобильные приложения</p>
             </li>
             <li class="services__item">
-              <img
-                src="./images/box3.jpg"
-                alt="В руках планшет и стилус"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./images/box/box3.jpg 1x, ./images/box/box3-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img src="./images/box/box3.jpg" alt="В руках планшет и стилус" />
+              </picture>
               <p class="services__name">Дизайнерские решения</p>
             </li>
           </ul>
